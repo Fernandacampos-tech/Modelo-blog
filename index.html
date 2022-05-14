@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Perter Parker</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#viagem">Viagem</a></li>
+        <li><a href="#vilmes">Filmes</a></li>
+        <li><a href="#books">Livros</a></li>
+        <li><a href="#contact">Sobre mim</a></li>
+      </ul>
+    </div>
+
+</nav>
+  
+<div class="container">
+  <!--Esse class container é um bootstrap class, que nos ajuda a adicionar a margin-right (margem direita), margin-left 
+    (margem esquerda) padding-left(preenchimento à esquerda), e padding-right (preenchimento à direita). Isso dá uma estrutura
+    formal para o conteúdo do nosso site. Tudo tem que ser posto dentro de uma div tag.-->
+	
+  	<h2 class="page-header"id="viagem">Lugares que você tem que conhecer</h2> <!-- Nós damos um ID a esse elemento h2 para 
+      identificação, para quando o item Viagem for clicado a tela seja redirecionada para o elemento h2.-->
+    
+      <!-- class=“page-header” -É um Bootstrap class que adiciona:
+◆ padding-bottom: 9px;
+◆ margin: 40px 0 20px;
+◆ border-bottom: 1px solid #eee;-->
+    
+  	<center>
+  		<div class="viagem_mainDiv"> <!--CSS do viagem_mainDiv:deve estar escrito no arquivo style.css.-->
+  			<img src="viagem1.jpeg">
+
+  			<h4 class="text-capitalize"><kbd>Prithvi cafe</kbd></h4>
+        <!--A tag h4 tem uma class=”text-capitalize”. Esse bootstrap class torna maiúscula a primeira letra de cada palavra. 
+          Mesmo que todas as palavras do código sejam minúsculas, a primeira letra será maiúscula 
+          no site, já que o bootstrap é executado quando a página é aberta-->
+
+<!-- Dentro da tag h4, nós temos a tag kbd. Essa é uma tag HTML mas o bootstrap e a estiliza com as seguintes características :
+
+● Adiciona padding ao texto.
+● Aumenta o tamanho da fonte.
+● Adiciona border-radius.
+● Mudar a color (cor) e a background-color (cor de plano de fundo).-->
+  			<!--VINI PAROU AQUI-->
+  			<hr> 
+
+  			<h5 class="text-success text-capitalize" >Eu visitei em dezenbro de 2018</h5>
+        <!--text-success faz com que o texto fique verde.-->
+        <!--text-capitalize torna maiúscula a primeira letra do nome.-->
+
+  			<p class="text-muted" >Um pequeno restaurante nas vielas de Juhu.  Não pisque se não você passrá direto da entrada do cafe.
+           Quando você estiver passando pela rua principal, Fique alerto e você verá uma pequena placa preta escrita "Prithvi cafe" .
+           O restaurante tem um bom menu e bons preços. A comida é deliciosa, as porções são bem generosas e alguns pratos servem até duas pessoas.
+           Quando tem som ao vivo aparece um grande público moderno e estiloso, nesses dias é melhor fazer reserva para evitar contratempos. 
+           Nos outros dias é basicamente só chegar. É aqui também quem acontece o "Festa do teatro em Prithvi", se você puder, não deixe de ir. </p>
+           <!--ext-muted faz com que o texto fique cinza-claro-->
+  		</div>
+  	</center>
+
+<br><br>
+
+  	<center>
+  		<div  class="viagem_mainDiv"> 
+  			<img src="viagem2.jpeg">
+
+  			<h4 class="text-capitalize"><kbd>jantar mantar - jaipur</kbd></h4>
+  			
+  			<hr >
+
+  			<h5 class="text-success text-capitalize" >Eu visitei em fevereito de 2019</h5>
+
+  			<p class="text-muted " > É um lugar maravilhoso. Você não pode deixar de ir. Fazer o passeio com um guia turístico vai fazer com que você compreenda melhor esse local histórico. 
+          É um pequeno complexo bem preservado de paredes amarelas. É um sítio histórico famoso entre os turístas. Lá você vai encontra vários despositivos usados na história da Índia para medir o tempo.
+          O ingresso tem um preço fixo de ₹15 para indianos, porém custa entre ₹225-250 para estrangeiros. É um ótimo lugar para visitar. Nós tivemos uma experiência maravilhosa visitando 
+          o observatório e observando a precisão dos objetos astrológicos contruídos a cerca de 300 anos atrás.</p>
+
+          <!--text-muted faz com que o texto fique cinza-claro-->
+  		</div>
+  	</center>
+
+
+<h2 class="page-header" id="filmes">Crítica de Filmes</h2>
+
+<div class="bg-primary filmesHead" data-toggle="collapse" data-target="#Vingadores_GuerraInfinita" >
+<!--● bg-primary é uma class bootstrap que adiciona a cor white (branca) e o background-color blue (fundo azul) à tag div
+
+● filmesHead - CSS adicionado para isso 
+
+● data-toggle="collapse" - Indica a tag div que algo será aberto quando a div for clicada
+
+● data-target="#Vingadores_Ultimato" - Indica a tag div que quando a div for clicada, aquela com a id=Vingadores_Ultimato deve abrir.
+-->
+
+    <span class="glyphicon glyphicon-film" ></span> Vingadores Guerra Infinita<i class="fa fa-sort-desc" ></i>
+  </div>
+<!--➔ Adicionamos uma tag span dentro dessa tag div, a qual contém o ícone do filme. Essa span possui uma class bootstrap 
+  glyphicon glyphicon-film para obter o ícone dos filmes.
+<i class="fa fa-sort-desc" = adiciona a setinha do dropdown >
+-->
+  <div id="Vingadores_GuerraInfinita" class="collapse">
+    <!--● Essa div tem um bootstrap id="Vingadores_GuerraInfinita", que serve para identificar essa div
+
+       ● Essa div tem uma class collapse, que serve para esconder o conteúdo da div tag a não ser que alguém clique na div
+data-target="#Vingadores_GuerraInfinita.-->
+
+	  <div class="filmesText" >
+        <img src="movie1.jpeg"class="img-responsive img-thumbnail"> 
+        <!--● img-responsive - Isso tornará a imagem responsiva. Isso quer dizer que a largura e altura da imagem irão ser alteradas 
+          de acordo com o tamanho da tela.
+        ● img-thumbnail - Essa class vai fazer com que a imagem vire um pequeno ícone ou uma miniatura, alterando sua padding e borda
+-->
+		  <h5 class="text-success text-capitalize">Exelente filme para completar a história da Marvel 
+        <!--● text-success tornará o texto verde
+          ● text-capitalize Torna maiúscula a primeira letra de cada palavra.        
+        O Bootstrap contém ícones embutidos, emoticons e animações. Precisamos somente nomeá-los e colocá-los no elemento HTML. Não
+precisamos importar ou utilizar imagens, nesse caso. Por isso, desenvolvedores preferem utilizar bootstrap, já que economiza bastante
+tempo.-->
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+      </h5>
+		  <p>Assisti hoje com meus filhos e adorei. Você tem que estar por dentro da história, senão vai perder boa parte da diversão. 
+        A sequência certa para assistir é: a Guerra infinita, Guerra civil, Pantera negra, A era de Ultron, Homem formiga e a vespa antes de assistir Vingadores: Ultimato. 
+        O filme tem várias homenagens a outros filmes da Marvel. Você vai gostar bastante. Logo no começo do filme (cuidado com o spoiler) tem uma cena degolamento incrível. 
+        O filme é baseado na série de ação mais comentada e cheia de ação.O filme conta como os vingadores se juntaram mais uma vez para reverter as ações de Thanos e trazer paz para o universo.
+         O filme é extenso, mas são três horas que valem muito a pena.</p>
+	  </div>
+  
+  </div>
+
+  <div class="bg-primary filmesHead" data-toggle="collapse" data-target="#O_rei_leão" >
+    <span class="glyphicon glyphicon-film" ></span> O rei leão<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="O_rei_leão" class="collapse">
+  
+    <div class="filmesText">
+       <img src="movie2.jpg"class="img-responsive img-thumbnail" >
+
+	   <h5 class="text-success text-capitalize">Ótimo para se ver uma vez
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+     </h5>
+	   <p>Eu levei meus filhos para assistirem o filme e eles adoraram. O filme conta a história de um príncipe leão, 
+       que depois da morte do seu pai, sai em busca do verdadeiro significado de responsabilidade e coragem. Vale muito a pena a ver pelos seus efeitos visuais e cinematográficos.
+        A Beyoncé realmente deu vida a Nala, mas Timon e Pumba foram quem roubaram os holofotes. As crianças vão amar</p>
+  	</div>
+  </div>
+  
+  <h2 class="page-header" id="livros">Lista de livros</h2>
+  <!--● class=“page-header” - Essa bootstrap class adiciona:
+◆ padding-bottom: 9px;
+◆ margin: 40px 0 20px;
+◆ border-bottom: 1px solid #eee;
+Essa classe dá ao elemento h2 padding e margin (margem) para um melhor alinhamento e um bottom border (borda inferior) para que a 
+aparência do elemento melhore .
+-->
+
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 book">
+    <!--- Livro 1 -
+- col-xs-6: Esse vai alocar a primeira metade da tela que tiver a largura menor que 768px.
+- col-sm-6: Esse vai alocar a primeira metade da tela que tiver a largura maior igual que 768px.
+- col-md-6: Esse vai alocar a primeira metade da tela do notebook que tiver a largura maior igual que 992px.
+- col-lg-6: Esse vai alocar a primeira metade da tela do notebook que tiver a largura maior igual que 1200px.
+
+- Livro 2 -
+- col-xs-6: Esse vai alocar a primeira metade da tela que tiver a largura menor que 768px.
+- col-sm-6: Esse vai alocar a primeira metade da tela que tiver a largura maior igual que 768px.
+- col-md-6: Esse vai alocar a primeira metade da tela do notebook que tiver a largura maior igual que 992px.
+- col-lg-6: Esse vai alocar a primeira metade da tela do notebook que tiver a largura maior igual que 1200px.-->
+    <img src="s1.jpg" class="img-responsive">
+    <hr>
+    <a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_6?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-6" id="nomeLivro">First Space Encyclopaedia</a>
+      <!--Adicione uma tag âncora para disponibilizar o link de compra do primeiro livro:
+Agora, temos uma anchor tag com o link de compra do livro e o nome do livro está contido dentro da tag âncora .-->
+  </div>
+
+
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 book">
+    <img src="s2.jpg" class="img-responsive">
+    <hr >
+    <a href="https://www.amazon.in/Moon-Picture-Puffins-Anastasia-Suen/dp/0140565981/ref=sr_1_2_sspa?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-2-spons&psc=1&smid=A3H3WE9M6NY1KV&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTVBPRUUyMlg5TU9XJmVuY3J5cHRlZElkPUEwMjUyOTM3MU9XVklaVFdUMk9GUSZlbmNyeXB0ZWRBZElkPUEwNDAwNTE1T1JZSVhWWDM3NTlMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" id="nomeLivro">Man on the Moon (Picture Puffins)</a>
+<br><br>
+  </div>
+
+    
+    <h2 class="page-header" id="mapa">Localização</h2>
+<section id="contact">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0"  allowfullscreen="100"></iframe>
+
+  <hr>
+  <img src="kid.jpeg" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+  <!--● Uma img-responsive class: Ela tornará a imagem responsiva which, o que significa que
+a largura e a altura serão alteradas de acordo com o tamanho da tela.
+● Uma img-circle class: Ela adiciona um border-radius (curvatura de borda) de 50% para imagem, para dar um efeito arredondado.
+● Queremos que a imagem ocupe uma pequena parte da tela (¼). Para chegarmos a esse resultado faremos os seguintes cálculos:
+○ 12/4 = 3
+■ 12 - porque o bootstrap divide a tela em 12 colunas.
+■ 4 - porque queremos dividir a tela em 4 partes.
+■ 3 é o resultado do cálculo. Então teremos esse código-
+
+● col-lg-3 class
+● col-md-3 class
+● col-sm-3 class
+● col-xs-4 class
+-->
+
+  <h3>Perter Parker</h3>
+
+        <div class="contato_1" >
+
+           <a href="mailto:my@gmail.com?Subject=Hi">
+               <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;meuendereçogmail@gmail.com</h5>
+            </a> 
+
+           <a href="#"> 
+               <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;usuáriodoinstagram</h5>
+            </a> 
+        </div>
+
+</section>
+
+  </div>
+
+</body>
+</html>

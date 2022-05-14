@@ -1,0 +1,53 @@
+
+.viagem_mainDiv
+{
+    border: 1px solid lightgrey; /*cor da borda dos blocos das imagens com texto das viagens*/
+}
+
+.viagem_mainDiv img
+{
+  width: 100%;
+}
+
+.viagem_mainDiv h5 , .viagem_mainDiv p
+{
+margin: 20px;
+}
+
+
+.filmesHead /* ajustes dos dropdown*/
+{
+    font-size: 20px;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.filmesHead i /*nome de filme seguido por uma tag i. Essa tag utiliza a font chamada ‘awesome’, para exibir o ícone à direita da div.*/
+{
+float: right; /*Queremos que esse ícone esteja à direita. Por isso, utilizamos float: right*/
+}
+
+.filmesText span
+{
+color: orange; /*estrela laranja*/
+}
+
+
+.livros /* Para que tenha um padding extra depois de cada imagem do livro.*/
+{
+    margin-bottom: 20px;
+}
+
+#contact iframe
+{
+    width: 100%;
+}
+
+#nomeLivro {
+    color: red;
+    font-size: 20px;
+}
+
+
+
